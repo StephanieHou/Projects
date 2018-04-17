@@ -1,0 +1,141 @@
+/* Body */
+
+#lsbacker {
+    width: 100%;
+    height: 100vh;
+    background-color: #6ba1a7;
+    display: flex;
+    align-content: center;
+}
+
+/* Content */
+
+#lscontent {
+    width: 80vw;
+    height: 100vh;
+    display: block;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px black solid; */
+}
+
+/* Logo */
+
+#logodiv {
+    width: 43vw;
+    float: left;
+}
+
+#f1_container {
+    position: relative;
+    margin: 10px auto;
+    width: 500px;
+    height: 80vh;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#f1_container {
+    perspective: 1000;
+}
+
+#f1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+
+#f1_container:hover #f1_card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#fliper img {
+    margin: 1vw;
+    margin-top: 15vh;
+    height: 48vh;
+}
+
+/* Contact Form */
+
+#login {
+    text-align: center;
+    float: left;
+    margin-top: 15vh;
+    width: 30vw;
+    height: 55vh;
+    /* border: 1px solid black; */
+    border-left: white solid 2px;
+}
+
+#login h1 {
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 7vh;
+    font-family: 'Phosphate-Inline';
+    color: black;
+}
+
+#login p {
+    font-size: 2.5vh;
+    margin: 5px;
+}
+
+#login input {
+    height: 5vh;
+    width: 23vw;
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 1.8vh;
+}
+
+#login input[type=submit] {
+    height: 5vh;
+    width: 15vw;
+    border-radius: 8px;
+    margin: 0px;
+    margin-bottom: 2vh;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 2vh;
+}
+
+#login input[type=submit]:hover {
+    background-color: #92dce5;
+    color: black;
+}
+
+#login select {
+    height: 5vh;
+    width: 23vw;
+    margin: 8px;
+    font-size: 1.8vh;
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+
+#login a:hover {
+    color: black;
+}

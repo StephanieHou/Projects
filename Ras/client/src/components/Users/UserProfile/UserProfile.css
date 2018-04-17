@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Passion+One");
+#upbacker {
+    /* border: 1px red solid; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#upbacker #topbar {
+    background-color: transparent;
+}
+
+#upbacker #userlogout {
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+/* Topbox */
+
+#topbox {
+    position: relative;
+    background: url(../../Images/Test5.jpg);
+    background-size: 100% 150%;
+    background-position: center bottom;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* border: red 1px solid; */
+}
+
+#profilelogo {
+    margin-top: 8vh;
+}
+
+#profilelogo img {
+    width: 4vw;
+}
+
+/* Usercontent */
+
+#usercontent {
+    position: absolute;
+    top: 43vh;
+    left: 0px;
+    width: 100vw;
+    height: 57vh;
+}
+
+/* Side Bar Navigation */
+
+.sidebar {
+    width: 20vw;
+    height: 40vh;
+    border-radius: 5px;
+    margin-top: -40px;
+    margin-left: 30px;
+    float: left;
+    padding: 5px;
+    border: 5px black double;
+}
+
+#sidebarinfo {
+    display: block;
+    padding: 50px;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: left;
+    margin-top: -60px;
+    margin-left: -40px;
+}
+
+#box1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+#box1 a:hover {
+    color: #6ba1a7;
+}
+
+.uls {
+    list-style-type: none;
+}
+
+/* Search Bar */
+
+#ubar {
+    position: fixed;
+    top: 23%;
+    width: 100%;
+    text-align: center;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#ubar button {
+    height: 5.6vh;
+    width: 7vh;
+    background-color: black;
+    border: none;
+}
+
+#ubar button:hover {
+    background-color: #92dce5;
+}
+
+#ubarcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2vw;
+}
+
+#ubar h3 {
+    margin-left: 2vw;
+}
+
+#ubar img {
+    width: 15px;
+}
+
+#textarea {
+    width: 45vw;
+    height: 30vh;
+}
+
+.inputs {
+    float: center;
+    border-radius: 10px;
+    width: 45vw;
+}
+
+.profileheads {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+}
+
+
+
+
+
+#usersummary{
+    /* border: 1px red solid; */
+    position: absolute;
+    top: 9vh;
+    width: 100%;
+    height: 46vh;
+    overflow-y: scroll; 
+}
+
+#deborah{
+    width: 17vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px  lightgray solid;
+}
+
+#usersuminfo{
+   /* border: 3px black double; */
+   width: 44vw;
+   position: absolute;
+   top: 3.4vh;
+   left: 23vw;
+   height: 33vh;
+}
+
+#usersuminfo h3{
+  margin: 0px;
+  padding: 5px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: lightgray;
+  border-bottom: 5px  #92dce5 solid;
+  width: 99%;
+
+ }
+
+ #userbottominfo{
+    /* border: 3px black double; */
+    width: 67vw;
+    margin: 10px;
+    padding: 0px;
+ }
+
+ #userbottominfo h3{
+    border-radius: 5px 5px 0px 0px;
+    background-color: lightgray;
+    border-bottom: 5px  #92dce5 solid;
+    margin: 0px;
+    padding: 5px;
+ }
+ 
+

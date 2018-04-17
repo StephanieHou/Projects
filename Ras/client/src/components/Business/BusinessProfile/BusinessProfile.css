@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Passion+One");
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Orbitron');
+#hpbacker {
+    /* border: 1px red solid; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#hpbacker #topbar {
+    background-color: transparent;
+}
+
+#hpbacker #userlogout {
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+/* Topbox */
+
+#htopbox {
+    position: relative;
+    background: url(../../Images/Test4.jpg);
+    background-size: 100% 220%;
+    background-position: center center;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* border: red 1px solid; */
+}
+
+/* Usercontent */
+
+#hostcontent {
+    position: absolute;
+    top: 43vh;
+    left: 0px;
+    width: 100vw;
+    height: 57vh;
+}
+
+.uls {
+    list-style-type: none;
+}
+
+/* Component Setup */
+
+.rightdiv {
+    position: absolute;
+    top: -8vh;
+    left: 26vw;
+    color: black;
+    border: 2px solid black;
+    height: 55vh;
+    width: 72vw;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.profileheads {
+    position: absolute;
+    height: 9vh;
+    background-color: #6ba1a7;
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+}
+
+.profileheads h3 {
+    /* border: 1px black solid; */
+    margin: 0;
+    padding: 15px;
+    font-family: 'Phosphate-Inline';
+    font-size: 3.5vh;
+}
+
+/* Booking */
+
+.bookingcontent {
+    position: absolute;
+    top: 9vh;
+    /* border:blue 1px solid; */
+    height: 45vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bookinglist {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.bookinglist h3 {
+    border: none;
+    border-bottom: solid 2px #92dce5;
+    margin: 0px;
+    padding: 5px;
+    background-color: lightgrey;
+    font-size: 20px;
+}
+
+.bookingsubs {
+    border-bottom: solid 2px lightgray;
+}
+
+.bookingsubs td {
+    color: grey;
+    font-size: 18px;
+}
+
+.bookinglist table,
+th,
+td {
+    /* border: 1px solid black; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bookinglist table {
+    table-layout: fixed !important;
+    border-collapse: collapse;
+    width: 96%;
+    margin: 10px;
+}
+
+.bookinglist td {
+    padding: 5px;
+}
+
+/* Search Bar */
+
+#hbar {
+    position: fixed;
+    top: 23%;
+    width: 100%;
+    text-align: center;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#hbar button {
+    height: 5.6vh;
+    width: 7vh;
+    background-color: black;
+    border: none;
+}
+
+#hbar button:hover {
+    background-color: #92dce5;
+}
+
+#hbarcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2vw;
+}
+
+#hbar h3 {
+    margin-left: 2vw;
+    font-size: 2.3vh;
+}
+
+#hbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vh;
+    margin-right: 10px;
+}
+
+#hbar a:hover {
+    color: #92dce5;
+}
+
+#hbar img {
+    width: 15px;
+}
+
+/* Account Content*/
+#accountcontent{
+    position: absolute;
+    top: 9vh;
+    /* border:blue 1px solid; */
+    height: 45vh;
+    width: 72vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#accountcontent img{
+    width: 17vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px  lightgray solid;
+}
+
+#hostsuminfo{
+    /* border: 3px black double; */
+    width: 30vw;
+    position: absolute;
+    top: 3.4vh;
+    left: 21vw;
+    height: 33vh;
+ }
+ 
+ #hostsuminfo h3{
+   margin: 0px;
+   padding: 5px;
+   border-radius: 5px 5px 0px 0px;
+   background-color: lightgray;
+   border-bottom: 5px  #92dce5 solid;
+   width: 99%;
+ 
+  }
+
+#chart {
+    width: 22vw;
+    height: 35vh;
+    position: absolute;
+    top: 0vh;
+    left: 45vw;
+    /* margin-left: 320px;
+    margin-bottom: 25px; */
+}
+
+#payment {
+    position: absolute;
+    top: 3.4vh;
+    left: 54vw;
+    width: 15vw;
+    height: 12vh;
+    border: 5px double grey;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin: 25px;
+    margin-left: 380px;
+    margin-top: 120px;*/
+} 
+
+#payment a{
+    font-size: 2vh;
+}
+#payment h4 {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+#hosting-summary {
+    position: absolute;
+    top: 25vh;
+    left: 54vw;
+    width: 15vw;
+    height: 12vh;
+    border: 5px double grey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2vh;
+}
+
+#hosting-summary h4 {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+#hosting-summary #amount{
+ margin-left: 60px;
+}
+
+#hosting-summary #a{
+    margin-left: 75px;
+   }
