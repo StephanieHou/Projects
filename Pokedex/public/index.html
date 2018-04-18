@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+	<title>React App</title>
+
+</head>
+
+<body>
+
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Josefin+Slab|Monoton');
+			@import url('https://fonts.googleapis.com/css?family=Exo');
+			@import url('https://fonts.googleapis.com/css?family=Lato');
+			@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+			body {
+				min-width: 1300px;
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: white;
+			}
+
+			a:hover {
+				color: lightgrey;
+			}
+
+			#navig {
+				float: right;
+				color: white;
+				padding: 15px;
+			}
+			/* WELCOME PAGE */
+
+			#mainbg {
+				background-image: url("https://i.imgur.com/eLUJCSK.jpg");
+				background-size: 1440px 900px;
+				background-position: center;
+				width: 100%;
+				height: 650px;
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				z-index: -1;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+
+			#main {
+				width: 900px;
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				top: 190px;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+
+			#main h1 {
+				font-family: 'Monoton', cursive;
+				font-size: 85px;
+				text-shadow: 3px 3px 0 white;
+			}
+
+			#main h3 {
+				font-size: 23px;
+				font-family: 'Josefin Slab', serif;
+				position: absolute;
+				top: 170px;
+				right: 26%;
+				text-shadow: 2px 2px 0 white;
+			}
+
+			#mainbg nav {
+				color: white;
+				position: absolute;
+				left: 43%;
+				bottom: 200px;
+				background-color: black;
+				padding: 6px 10px;
+				border-radius: 15px;
+				border: white solid 1px;
+			}
+			/* TOP AND BOTTOM BARS */
+
+			#topbar {
+				background-image: url("https://i.imgur.com/6XEXYZ3.jpg");
+				border-bottom: 5px solid black;
+				width: 100%;
+				height: 50px;
+			}
+
+			#bottombar {
+				position: absolute;
+				bottom: 0px;
+				background-image: url("https://i.imgur.com/6XEXYZ3.jpg");
+				border-top: 5px solid black;
+				width: 100%;
+				height: 40px;
+			}
+			/* HOME PAGE */
+
+			#home {
+				width: 100%;
+				height: 780px;
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				z-index: -1;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background-image: url("https://orig00.deviantart.net/7226/f/2014/324/2/e/_wallpaper__generation_3_by_arkeis_pokemon-d85oq7r.jpg");
+				background-size: 100% 100%;
+				background-postion: top center;
+			}
+
+			#home img {
+				position: absolute;
+				top: 250px;
+				left: 500px;
+			}
+
+			#home p {
+				position: absolute;
+				width: 400px;
+				left: 475px;
+				bottom: 45px;
+				padding: 3px;
+				font-size: 13px;
+				border: 3px solid black;
+				background-color: rgba(255, 255, 255, 0.5);
+				border-radius: 15px;
+			}
+
+			#left:hover {
+				background-color: black!important;
+			}
+
+			#home #left {
+				position: absolute;
+				left: 320px;
+				bottom: 200px;
+				height: 30px;
+				width: 75px;
+				padding: 5px;
+				border-radius: 15px 50px;
+				background-color: FireBrick;
+				color: white;
+				border-color: white;
+			}
+
+			#right:hover {
+				background-color: black!important;
+			}
+
+			#home #right {
+				position: absolute;
+				right: 270px;
+				bottom: 200px;
+				height: 30px;
+				width: 95px;
+				padding: 5px;
+				border-radius: 50px 15px;
+				background-color: Navy;
+				color: white;
+				border-color: white;
+			}
+			/* POKEDEX PAGE */
+
+			#pokedex {
+				width: 100%;
+				height: 650px;
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				z-index: -1;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(255, 255, 255, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(255, 255, 255, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 30px);
+				background-color: #a3a3ec;
+			}
+
+			#pokesearch {
+				position: absolute;
+				left: 0;
+				top: 150px;
+				width: 450px;
+				text-align: center;
+				font-size: 12px;
+				font-family: Lato, sans-serif;
+				/* border:1px solid black; */
+			}
+
+			#pokesearch h2 {
+				font-family: 'Press Start 2P', cursive;
+				font-size: 23px;
+			}
+
+			#pokesearch input[type="submit"] {
+				background-color: black;
+				border-radius: 10px 4px;
+				border: none;
+				box-shadow: 0 0 0 1px white;
+				font-family: Lato, sans-serif;
+				color: white;
+			}
+
+			#pokesearch input[type="submit"]:hover {
+				background-color: #FF1A2E;
+				color: black;
+			}
+
+			#sortlist {
+				/* border: 1px solid black; */
+				height: 190px;
+				overflow-y: scroll;
+			}
+
+			#sortlist img {
+				height: 200px;
+				width: 200px;
+			}
+
+			#sortlist button {
+				background-color: #FF1A2E;
+				border-radius: 5px 20px;
+				border: none;
+				font-family: 'Press Start 2P', cursive;
+				font-size: 8px;
+				width: 200px;
+				height: 30px;
+				box-shadow: 0 0 0 3px white;
+			}
+
+			#sortlist button:hover {
+				background-color: black;
+				color: white;
+				box-shadow: 0 0 0 3px #FF1A2E;
+			}
+
+			#wait {
+				position: absolute;
+				background-color: black;
+				height: 200px;
+				width: 400px;
+				top: 220px;
+				right: 210px;
+				border-radius: 15px;
+				border: 1px solid black;
+				box-shadow: 0 0 0 3px white;
+			}
+
+			#wait h1 {
+				color: white;
+				font-size: 16px;
+				font-family: 'Press Start 2P', cursive;
+			}
+
+			#wait img {
+				height: 100px;
+				width: 100px;
+			}
+
+			#pokeinfo {
+				position: absolute;
+				right: 100px;
+				top: 150px;
+				/* border:1px solid black; */
+				width: 450px;
+				text-align: center;
+				z-index: -1;
+				font-family: Lato, sans-serif;
+				color: white;
+			}
+
+			#pokeimg {
+				position: absolute;
+				right: 490px;
+				top: 100px;
+			}
+
+			#pokeimg img {
+				height: 200px;
+				width: 200px;
+			}
+
+			#pokeinfo h1,
+			p {
+				font-family: 'Exo', sans-serif;
+			}
+
+			#pokeball {
+				height: 30px;
+				width: 30px;
+			}
+
+			#des {
+				font-size: 14px;
+			}
+
+			#pokedex table,
+			td {
+				/* border: 1px solid black; */
+				width: 350px;
+				padding: 0;
+			}
+
+			#height {}
+
+			#weight {}
+
+			#category {}
+
+			#abil {}
+
+			#type {}
+
+			#weak {}
+
+			#sprite {
+				position: absolute;
+				width: 492px;
+				height: 492px;
+				bottom: 65px;
+				right: 0px;
+			}
+
+			#bottombarpoke {
+				position: absolute;
+				bottom: -90px;
+				background-image: url("https://i.imgur.com/6XEXYZ3.jpg");
+				border-top: 5px solid black;
+				width: 100%;
+				height: 98px;
+			}
+
+			#deximg {
+				position: absolute;
+				left: 0px;
+				top: -5px;
+				width: 450px;
+				height: 687px;
+				z-index: -1;
+			}
+			/* MORE PAGE */
+
+			#more {
+				width: 100%;
+				height: 800px;
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				z-index: -1;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background-image: url("http://www.desktop-screens.com/data/out/87/3286197-pokemon-wallpapers.jpg");
+				background-size: 100% 100%;
+				background-postion: right bottom;
+			}
+
+			#content {
+				position: absolute;
+				width: 900px;
+				height: 680px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				/* border: black 1px solid; */
+				left: 15%;
+				overflow-y: scroll;
+			}
+
+			#bigdiv:hover{
+				margin-top: 5px;
+			}
+			#bigword:hover{
+				background-color:#B3A125;
+			}
+
+			#bigdiv img {
+				width: 100%;
+				height: 420px;
+				border-radius: 15px 15px 0px 0px;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#bigdiv {
+				float: left;
+				height: 520px;
+				width: 500px;
+				/* border: black 1px solid; */
+				border-radius: 15px;
+				margin: 10px;
+			}
+
+			#bigword {
+				position: relative;
+				/* border: black 1px solid; */
+				margin: 0px;
+				height: 100px;
+				width: 500px;
+				top: -10px;
+				border-radius: 0px 0px 15px 15px;
+				background-color: #3B4CCA;
+			}
+
+			#bigword h1 {
+				/* text-align:left; */
+				margin-top: 0px;
+				margin-bottom: 1px;
+				margin-left: 5px;
+				/* border: black 1px solid; */
+				color: white;
+				font-size: 25px;
+			}
+
+			#bigword p {
+				/* border: black 1px solid; */
+				margin-top: 0px;
+				font-size: 14px;
+			}
+			#smalldiv:hover{
+				margin-top: 10px;
+			}
+			#smallword:hover{
+				background-color:#B3A125;
+			}
+
+			#smalldiv {
+				float: left;
+				height: 250px;
+				width: 350px;
+				/* border: black 1px solid; */
+				border-radius: 15px;
+				margin: 13px;
+			}
+
+			#smalldiv img {
+				width: 100%;
+				height: 190px;
+				border-radius: 15px 15px 0px 0px;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#smallword {
+				position: relative;
+				/* border: black 1px solid; */
+				margin: 0px;
+				height: 60px;
+				width: 350px;
+				bottom: 5px;
+				border-radius: 0px 0px 15px 15px;
+				background-color: #3B4CCA;
+			}
+
+			#smallword h1 {
+				/* text-align:left; */
+				margin-top: 0px;
+				margin-left: 5px;
+				margin-bottom: 1px;
+				/* border: black 1px solid; */
+				color: white;
+				font-size: 16px;
+			}
+
+			#smallword p {
+				/* border: black 1px solid; */
+				margin-top: 0px;
+				margin-left: 2px;
+				margin-right: 2px;
+				font-size: 9px;
+			}
+			/* Animations */
+			/* Scroll Animation */
+
+			.scroll-left {
+				height: 50px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.scroll-left p {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				line-height: 50px;
+				text-align: center;
+				/* Starting position */
+				-moz-transform: translateX(100%);
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+				/* Apply animation to this element */
+				-moz-animation: scroll-left 10s linear infinite;
+				-webkit-animation: scroll-left 10s linear infinite;
+				animation: scroll-left 10s linear infinite;
+			}
+			/* Move it (define the animation) */
+
+			@-moz-keyframes scroll-left {
+				0% {
+					-moz-transform: translateX(100%);
+				}
+				100% {
+					-moz-transform: translateX(-100%);
+				}
+			}
+
+			@-webkit-keyframes scroll-left {
+				0% {
+					-webkit-transform: translateX(100%);
+				}
+				100% {
+					-webkit-transform: translateX(-100%);
+				}
+			}
+
+			@keyframes scroll-left {
+				0% {
+					-moz-transform: translateX(100%);
+					/* Browser bug fix */
+					-webkit-transform: translateX(100%);
+					/* Browser bug fix */
+					transform: translateX(100%);
+				}
+				100% {
+					-moz-transform: translateX(-100%);
+					/* Browser bug fix */
+					-webkit-transform: translateX(-100%);
+					/* Browser bug fix */
+					transform: translateX(-100%);
+				}
+			}
+			/* Shine */
+
+			h1.effect-shine:hover {
+				-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+				-webkit-mask-size: 200%;
+				animation: shine 2s infinite;
+			}
+
+			@-webkit-keyframes shine {
+				from {
+					-webkit-mask-position: 150%;
+				}
+				to {
+					-webkit-mask-position: -50%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="root"></div>
+	</body>
+</body>
+
+</html>
