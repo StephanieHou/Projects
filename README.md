@@ -2,7 +2,7 @@
 1. [RAS(Rent Your Studio)](https://github.com/StephanieHou/Projects/tree/master/Ras)
   - A website application to efficiently rent a studio
   - Uses React, HTML, CSS, Javascript, SQL (Postgres)
-2. [Pokedex](https://codesandbox.io/s/6218j7rrjk)
+2. [Pokedex](https://github.com/StephanieHou/Projects/tree/master/Pokedex)
   - A website application designed to be used as a pokedex
   - Uses React, HTML, CSS, Javascript
 3. [Concentration Game](https://codesandbox.io/s/jl9126v99w)
