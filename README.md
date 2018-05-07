@@ -1,5 +1,7 @@
 # Projects
 1. [Linests(In Progress)](https://github.com/StephanieHou/Linests)
+  - A website application to match people based on interestes
+  - Uses React, HTML, SASS, Bootstrap, JQuery, Javascript, SQL (Postgres)
 2. [RAS(Rent Your Studio) (Continue)](https://github.com/StephanieHou/Projects/tree/master/Ras)
   - A website application to efficiently rent a studio
   - Uses React, HTML, CSS, Javascript, SQL (Postgres)
