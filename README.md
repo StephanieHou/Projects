@@ -1,5 +1,5 @@
 # Projects
-1. [Mock Cordova Form](https://github.com/StephanieHou/Linests)
+1. [Mock Cordova Form](https://github.com/StephanieHou/CordovaForm)
   - A Cordova app to capture customer data through a consent form and push it to a database for account executives to use later
   - Uses Cordova, HTML, CSS, Jquery with a PHP script to link to SQL database
 2. [Linests(In Progress/Add Responsive)](https://github.com/StephanieHou/Linests)
